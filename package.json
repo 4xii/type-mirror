@@ -1,7 +1,7 @@
 {
   "name": "type-mirror",
   "type": "module",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-beta.3",
   "author": "4xii",
   "homepage": "https://github.com/4xii/type-mirror/blob/main/README.md",
   "bugs": {
@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/4xii/type-mirror.git"
   },
+  "files": [
+    "dist"
+  ],
   "bin": {
     "typemir": "./cli.mjs"
   },
