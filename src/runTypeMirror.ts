@@ -1,7 +1,7 @@
 import path from 'path';
-import { generateTypeScriptInterface, writeTypesToFile } from './core';
+import { generateTypeScriptInterface, writeTypesToFile } from './generate';
 import { Config } from './defineConfig';
-import { tpl } from './clienl-template';
+import { tpl } from './clientTpl';
 
 export async function runTypeMirror(config: Config) {
   const typeMirrorDir = path.resolve(process.cwd(), 'node_modules/type-mirror/dist');
