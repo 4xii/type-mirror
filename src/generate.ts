@@ -10,7 +10,7 @@ export async function generateTypeScriptInterface(data: unknown, typeName: strin
     // 对象或者数组，使用json2ts生成TypeScript接口
     return JsonToTS(data, {
       rootName: typeName
-    }).join('/n');
+    }).join('\n');
   } else if (typeof data === 'number') {
     return 'number';
   } else if (typeof data === 'string') {
