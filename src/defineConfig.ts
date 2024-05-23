@@ -1,9 +1,12 @@
+import { loadConfig } from 'unconfig'
+
 export interface Config {
   client: {
     [key: string]: () => Promise<any>;
   };
+  outputFilePath?: string,
 }
-import { loadConfig } from 'unconfig'
+
 
 export const loadUserConfig = async (): Promise<Config> => {
   const loadResut = await loadConfig({

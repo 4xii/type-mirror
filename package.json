@@ -22,16 +22,19 @@
   "scripts": {
     "build": "tsup --clean --dts",
     "prepare:type": "tsup --dts-only",
-    "stub": "tsup --watch --onSuccess 'tsup --dts-only'"
+    "stub": "tsup --watch --onSuccess 'tsup --dts-only'",
+    "test": "vitest"
   },
   "devDependencies": {
-    "@types/node": "^18.19.31"
+    "@types/node": "^18.19.31",
+    "vitest": "^1.6.0"
   },
   "dependencies": {
     "commander": "^12.0.0",
     "json-to-ts": "^2.1.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
+    "typescript-formatter": "^7.2.2",
     "unconfig": "^0.3.13"
   }
 }
