@@ -16,6 +16,7 @@ export const loadUserConfig = async (): Promise<Config> => {
         // default extensions
         extensions: ['ts', 'mts', 'cts', 'js', 'mjs', 'cjs', 'json', ''],
       },
+      
       // load `devai` field in `package.json` if no above config files found
       {
         files: 'package.json',
